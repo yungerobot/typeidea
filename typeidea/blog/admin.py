@@ -114,11 +114,14 @@ class PostAdmin(BaseOwnerAdmin):
         )
     operator.short_description = '操作'
 
+    """
     class Media:
         css = {
             'all':("https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css",),
         }
         js = ('https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.js',)
+    """
+
     """
     def has_add_permission(self, request):
         opts = self.opts
